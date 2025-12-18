@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AppProvider } from './AppContext';
@@ -13,12 +14,12 @@ import Facilities from './Facilities';
 import Gallery from './Gallery';
 
 const Layout: React.FC<{children: React.ReactNode}> = ({children}) => (
-    <>
+    <div className="flex flex-col min-h-screen">
         <Navbar />
-        <div className="min-h-[80vh]">{children}</div>
+        <main className="flex-grow">{children}</main>
         <AIConcierge />
         <Footer />
-    </>
+    </div>
 );
 
 const App: React.FC = () => {
