@@ -1,5 +1,5 @@
 
-import { RoomType, Language } from './types';
+import { RoomType } from './types';
 
 export const HOTEL_INFO = {
   name: "Antalya Hotel Amman",
@@ -34,27 +34,35 @@ export const INITIAL_ROOMS = [
     amenities: ['wifi', 'ac', 'tv', 'minibar', 'jacuzzi'],
     imageUrl: 'https://cf.bstatic.com/xdata/images/hotel/max1024x768/498418012.jpg',
     available: true
+  },
+  {
+    id: '3',
+    type: RoomType.FAMILY,
+    titleEn: 'Family Executive Suite',
+    titleAr: 'جناح عائلي فاخر',
+    descriptionEn: 'Spacious rooms designed for the perfect family getaway.',
+    descriptionAr: 'غرف واسعة مصممة لرحلة عائلية مثالية.',
+    price: 220,
+    capacity: 5,
+    amenities: ['wifi', 'ac', 'tv', 'minibar', 'kitchen'],
+    imageUrl: 'https://cf.bstatic.com/xdata/images/hotel/max1024x768/498418021.jpg',
+    available: true
   }
 ];
 
 export const TRANSLATIONS: Record<string, any> = {
-  heroTitle: { en: "Where Comfort Meets Elegance", ar: "حيث تلتقي الراحة بالأناقة" },
-  heroSubtitle: { en: "Experience the heart of Amman in luxury.", ar: "استمتع بقلب عمان في فخامة." },
-  bookNow: { en: "Book Now", ar: "احجز الآن" },
+  heroTitle: { en: "The Crown of Luxury", ar: "تـاج الـفـخـامـة" },
+  heroSubtitle: { en: "Experience unmatched 5-star elegance in the heart of Jordan's capital.", ar: "استمتع بأناقة 5 نجوم لا تضاهى في قلب العاصمة الأردنية." },
+  bookNow: { en: "Book Your Stay", ar: "احجز إقامتك الآن" },
   home: { en: "Home", ar: "الرئيسية" },
-  rooms: { en: "Rooms", ar: "الغرف" },
-  facilities: { en: "Facilities", ar: "المرافق" },
+  rooms: { en: "Suites", ar: "الأجنحة" },
+  facilities: { en: "Services", ar: "الخدمات" },
   gallery: { en: "Gallery", ar: "المعرض" },
   contact: { en: "Contact", ar: "اتصل بنا" },
   night: { en: "/ night", ar: "/ ليلة" },
-  footerText: { en: "© 2024 Antalya Hotel. All rights reserved.", ar: "© 2024 فندق أنطاليا. جميع الحقوق محفوظة." },
-  aiPrompt: { en: "AI Concierge", ar: "المساعد الذكي" },
-  // Added missing translation keys used in components
-  viewRooms: { en: "View Rooms", ar: "عرض الغرف" },
+  footerText: { en: "© 2024 Antalya Hotel Amman. Luxury Collection.", ar: "© 2024 فندق أنطاليا عمان. مجموعة الفخامة." },
+  aiPrompt: { en: "Concierge", ar: "المساعد الذكي" },
   guests: { en: "Guests", ar: "ضيوف" },
-  search: { en: "Book Your Stay", ar: "احجز إقامتك" },
-  checkIn: { en: "Check In", ar: "موعد الوصول" },
-  checkOut: { en: "Check Out", ar: "موعد المغادرة" },
-  aboutUs: { en: "About Us", ar: "من نحن" },
-  admin: { en: "Admin", ar: "الإدارة" }
+  viewRooms: { en: "View All Suites", ar: "عرض كافة الأجنحة" }
 };
+
